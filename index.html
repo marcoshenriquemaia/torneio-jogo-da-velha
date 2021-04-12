@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <title>Torneio Jogo da velha</title>
+  </head>
+  <body>
+    <section class="container-left">
+      <h3 class="ranking-title">Ranking</h3>
+      <ul class="player-card-list">
+        <li class="player-card">
+          <img src="./src/images/alan.jpg" class="player-card-image" />
+          <div class="player-card-center">
+            <span class="player-card-info">Vitórias: 1</span>
+            <span class="player-card-info">Derrotas: 2</span>
+            <span class="player-card-info">Empates: 4</span>
+            <span class="player-card-info">Partidas: 7</span>
+          </div>
+          <span class="player-card-score">20</span>
+        </li>
+      </ul>
+      <div class="button-wrapper">
+        <button class="button button-start">Jogar</button>
+        <button class="button button-reset-board">Resetar board</button>
+        <button class="button button-reset-score" style="display: none;">Resetar placar</button>
+      </div>
+    </section>
+    <section class="container-center">
+      <h1 class="game-title">Campeonato #1 Jogo da velha E-plus</h1>
+      <div class="scoreboard">
+        <span class="player-name player-1-name"></span>
+        <span class="player-score player-1-score">0</span>
+        <span class="player-score player-2-score">0</span>
+        <span class="player-name player-2-name"></span>
+      </div>
+      <span class="match-number">0</span>
+      <div class="battlefield">
+        <div class="hash-stick hash-stick-1"></div>
+        <div class="hash-stick hash-stick-2"></div>
+        <div class="hash-stick hash-stick-3"></div>
+        <div class="hash-stick hash-stick-4"></div>
+        <span class="field field-0"></span>
+        <span class="field field-1"></span>
+        <span class="field field-2"></span>
+        <span class="field field-3"></span>
+        <span class="field field-4"></span>
+        <span class="field field-5"></span>
+        <span class="field field-6"></span>
+        <span class="field field-7"></span>
+        <span class="field field-8"></span>
+      </div>
+    </section>
+    <section class="container-right"></section>
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
